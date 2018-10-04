@@ -1,0 +1,17 @@
+﻿@model List<StudentsApp.Controllers.Student>
+    <div>
+        <table class="table-bordered">
+            <tr>
+                <th>firstName</th><th>LastName</th><th>Mid</th><th>Company</th>
+            </tr>
+           @foreach (var student in Model)
+           {
+            <tr>
+                <td>@Html.DisplayFor(item => student.firstName)</td>
+                <td>@Html.DisplayFor(item => student.LastName)</td>
+                <td>@Html.DisplayFor(item => student.Mid)</td>
+                <td>@Html.DisplayFor(item => student.Company)</td>
+            </tr>
+           }
+        </table>
+    </div>
