@@ -16,6 +16,7 @@ namespace StudentsApp.Controllers
             listStudents.Add(new Student { firstName = "Dhanjunjay", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
             listStudents.Add(new Student { firstName = "Dhanjunjay", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
             listStudents.Add(new Student { firstName = "Surendra", Mid = "M1048745", LastName = "Abc", Company = "Mindtree" });
+            listStudents.Add(new Student { firstName = "Surendra", Mid = "M1048745", LastName = "Abc", Company = "Mindtree" });
 
             return View(listStudents);
         }
