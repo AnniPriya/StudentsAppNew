@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using StudentsApp.students;
 
 namespace StudentsApp.Controllers
 {
@@ -10,17 +11,13 @@ namespace StudentsApp.Controllers
     {
         public ActionResult Index()
         {
-            List<Student> listStudents = new List<Student>();
-
-            listStudents.Add(new Student { firstName = "Dhanjunjay", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
-            listStudents.Add(new Student { firstName = "Dhanjunjay", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
-            listStudents.Add(new Student { firstName = "surendra", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
-            listStudents.Add(new Student { firstName = "Ramesh", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
-            listStudents.Add(new Student { firstName = "Suresh", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
+            StudentTransactions st = new StudentTransactions();
+            List<Student> listStudents = st.loadStudents();
 
             return View(listStudents);
         }
 
+       
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -31,9 +28,12 @@ namespace StudentsApp.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            
             return View();
         }
+
+       
+
     }
     public class Student
     {
