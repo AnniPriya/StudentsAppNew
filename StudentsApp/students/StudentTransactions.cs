@@ -16,7 +16,9 @@ namespace StudentsApp.students
             listStudents.Add(new Student { firstName = "surendra", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
             listStudents.Add(new Student { firstName = "Ramesh", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
             listStudents.Add(new Student { firstName = "Suresh", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
-            listStudents.Add(new Student { firstName = "Suresh", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
+            listStudents.Add(new Student { firstName = "Rajini", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
+                  listStudents.Add(new Student { firstName = "hello", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
+            listStudents.Add(new Student { firstName = "hi there", Mid = "M1048649", LastName = "Xyz", Company = "Mindtree" });
 
             return listStudents;
         }
